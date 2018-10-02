@@ -57,6 +57,7 @@ nav {
 }
 nav h1 {
   margin: auto;
+	padding-top: 20px;
 }
 nav h1 a {
   color: #fff;
@@ -279,4 +280,72 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+/* ====================== Responsive Restaurant Details ====================== */
+@media only screen and (max-width: 600px) {
+
+	.inside {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.inside #map-container {
+		top: 130px;
+		position: relative;
+	  height: 270px;
+	  width: 100%;
+	}
+
+	.inside #breadcrumb {
+		width: 100%;
+	}
+
+	.inside #restaurant-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		position: relative;
+		padding: 140px 0px 30px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.inside #restaurant-address, .inside #restaurant-hours, .inside #restaurant-img, .inside #restaurant-cuisine {
+		align-self: center;
+	}
+
+	.inside #restaurant-address {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+
+	.inside #restaurant-cuisine {
+		margin: 20px 0px;
+	}
+
+  .inside #reviews-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 30px 0px 80px;
+	}
+
+	.inside #reviews-container h2, .inside #reviews-container li {
+		align-self: center;
+	}
+
+	.inside #reviews-container li {
+		margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+	}
+
+	.inside #footer {
+		width: 100%;
+		padding: 25px 0px;
+	}
+
 }
