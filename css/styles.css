@@ -213,7 +213,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 45%;
 }
 #restaurant-name {
   color: #f18200;
@@ -247,11 +247,19 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
+  padding: 140px 0px 30px;
   width: 50%;
 }
+#restaurant-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+#restaurant-address, #restaurant-hours, #restaurant-img, #restaurant-cuisine {
+	align-self: center;
+}
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 30px 0px 100px;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -259,6 +267,7 @@ nav h1 a {
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
+	text-align: center;
 }
 #reviews-list {
   margin: 0;
@@ -266,12 +275,15 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
+	border-radius: 10px;
   display: block;
   list-style-type: none;
-  margin: 0 0 30px;
+  margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 20px 20px 20px;
   position: relative;
   width: 85%;
 }
@@ -293,7 +305,7 @@ nav h1 a {
 	}
 
 	.inside #map-container {
-		top: 130px;
+		top: 0px;
 		position: relative;
 	  height: 270px;
 	  width: 100%;
@@ -301,6 +313,7 @@ nav h1 a {
 
 	.inside #breadcrumb {
 		width: 100%;
+		position: relative;
 	}
 
 	.inside #restaurant-container {
@@ -308,7 +321,7 @@ nav h1 a {
 		flex-direction: column;
 		width: 100%;
 		position: relative;
-		padding: 140px 0px 30px;
+		padding: 60px 0px 30px;
 		margin: auto;
 		text-align: center;
 	}
@@ -320,10 +333,6 @@ nav h1 a {
 	.inside #restaurant-address {
 		margin-top: 10px;
 		margin-bottom: 30px;
-	}
-
-	.inside #restaurant-cuisine {
-		margin: 20px 0px;
 	}
 
   .inside #reviews-container {
@@ -348,4 +357,7 @@ nav h1 a {
 		padding: 25px 0px;
 	}
 
+  .inside header {
+		position: relative;
+	}
 }
